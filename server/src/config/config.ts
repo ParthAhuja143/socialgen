@@ -19,7 +19,7 @@ export default {
   },
   mongodb: {
     uri: process.env.MONGODB_URI,
-    dbName: process.env.MONGODB_DB_NAME
+    dbName: process.env.DB_NAME
   },
   session: {
     key: process.env.SESSION_NAME,
