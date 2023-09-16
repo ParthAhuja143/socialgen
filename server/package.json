@@ -5,8 +5,8 @@
   "scripts": {
     "serve": "node ./build/server.js",
     "start": "nodemon --exec ts-node --files -r tsconfig-paths/register src/server.ts",
-    "build": "rimraf ./build && tsc && ef-tspm",
-    "postinstall": "rimraf ./build && tsc && ef-tspm"
+    "build": "node_modules/.bin/rimraf ./build && node_modules/.bin/tsc && ef-tspm",
+    "postinstall": "node_modules/.bin/rimraf ./build && node_modules/.bin/tsc && ef-tspm"
   },
   "dependencies": {
     "@google-cloud/storage": "^5.7.2",
